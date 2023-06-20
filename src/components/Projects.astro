@@ -18,6 +18,7 @@ const projects = await getCollection('projects', ({ data }) => {
 		{
 			projects.map((project) => (
 				<Card
+					img={project.data.img_url}
 					url={project.data.link}
 					title={project.data.title}
 					alt={project.data.img_alt}
@@ -27,13 +28,13 @@ const projects = await getCollection('projects', ({ data }) => {
 		}
 	</div>
 	<a
-		href="https://github.com/"
+		href="https://github.com/Fercho5656"
 		target="_blank"
 		rel="noopener"
 		class="flex flex-row text-black hover:text-orange dark:text-white dark:hover:text-orange"
 		aria-label="link to repository"
 	>
-		View full private projects archive
+		View full projects archive
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
