@@ -1,7 +1,8 @@
 ---
 inProgress: false
-title: Project title
+title: NFT Preview Card Component
+img_url: src\assets\images\projects\project_2.webp
 img_alt: project image alt text
-link: https://github.com/veranikabarel?tab=repositories
-tags: ['React', 'CSS', 'Typescript']
+link: https://github.com/Fercho5656/Frontend-Mentor-NFT-preview-card-component
+tags: ['HTML', 'CSS']
 ---
