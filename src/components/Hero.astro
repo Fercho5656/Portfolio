@@ -1,7 +1,6 @@
 ---
 import heroImage from '@assets/images/hero.webp';
 import { Image } from '@astrojs/image/components';
-import Button from '@components/ui/Button.astro';
 ---
 
 <section
@@ -11,11 +10,9 @@ import Button from '@components/ui/Button.astro';
 	<div class="mb-10 flex flex-col items-center lg:mb-0 lg:w-1/2">
 		<div>
 			<h1 class="mb-10 font-monospace text-3xl text-black dark:text-white lg:text-5xl">
-				Hi! My name is <span class="text-orange">Fernando Moreno</span> and I am a FullStack Web Developer and Computer Systems Engineer.
+				Hi! My name is <span class="text-orange">Fernando Moreno</span> and I am a FullStack Web Developer
+				and Computer Systems Engineer.
 			</h1>
-		</div>
-		<div class="mb-10">
-			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">Learn more</Button>
 		</div>
 	</div>
 	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
