@@ -19,6 +19,7 @@ const projects = await getCollection('projects', ({ data }) => {
 			projects.map((project) => (
 				<Card
 					img={project.data.img_url}
+					projectUrl={project.data.project_link}
 					url={project.data.link}
 					title={project.data.title}
 					alt={project.data.img_alt}

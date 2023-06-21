@@ -2,8 +2,10 @@
 import projectImage from '@assets/images/project.png';
 import { Image } from '@astrojs/image/components';
 import Tags from '@components/ui/Tags.astro';
+import { Icon } from 'astro-icon';
 interface Props {
 	url?: string;
+	projectUrl?: string;
 	img?: string;
 	alt?: string;
 	title?: string;
@@ -12,6 +14,7 @@ interface Props {
 }
 
 const {
+	projectUrl = '#',
 	url = '#',
 	alt = 'Project image',
 	title = 'Project title',
@@ -23,8 +26,18 @@ const {
 <section class="w-full p-4 md:w-1/2 lg:w-1/3">
 	<article
 		data-testId="card"
-		class="rounded-xl bg-white p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl"
+		class="relative group overflow-clip rounded-xl bg-white p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl"
 	>
+		<a
+			class="absolute z-10 w-0 h-0 group-hover:p-2 group-hover:w-20 group-hover:h-20 transition-all bg-orange top-0 right-0"
+			target="_blank"
+			rel="noopener"
+			href={projectUrl}
+			aria-label="link to project code"
+			title="Source Code"
+		>
+			<Icon class="h-full" name="codicon:code" />
+		</a>
 		<a target="_blank" rel="noopener" href={url} aria-label="link to project">
 			<div class="relative flex items-end overflow-hidden rounded-xl">
 				<Image
