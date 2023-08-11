@@ -14,7 +14,7 @@ const projects = await getCollection('projects', ({ data }) => {
 >
 	<h2 class="font-monospace text-2xl text-orange lg:text-4xl">Projects</h2>
 	<span class="mb-10 h-1 w-10 bg-orange"></span>
-	<div class="mb-10 flex w-full flex-col flex-wrap items-center md:flex-row">
+	<div class="mb-10 flex w-full flex-row flex-wrap justify-center items-center">
 		{
 			projects.map((project) => (
 				<Card
